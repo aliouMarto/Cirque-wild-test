@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+<body>
+<style>
+   * { box-sizing: border-box;
+       margin: 0px;
+       padding: 0px;
+     }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style-type:none;
+}
+main{
+    background: white;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #f2f2f2;
+}
+
+header{
+  display: flex;
+}
+header nav{
+}
+nav ul{
+    display: flex;
+       margin-top: 70px;
+}
+nav ul li{
+   margin-left: 75px;
+    background: #333333;
+    padding: 9px;
+    width: 98px;
+    text-align: center;
+}
+nav ul li a{
+    font-size: 20px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+
+}
+nav ul li a:hover{
+    color: red;
+}
+.logo{
+  width: 20%;
+  margin-left: 14px;
+}
+.logo img{
+  width: 87%;
+}
+.logo h1{
+ margin-left: 31px;
+ font-family: 'Amatic SC', cursive;
+}
+.production ul{
+    display: flex;
+    justify-content: space-around;
+}
+.production ul p{
+   text-align: center;
+   margin-bottom: 10px;
+}
+.production h2{
+   text-align: center;
+   margin-top: 68px;
+   margin-bottom: 50px;
+   text-decoration: underline;
+   font-family: 'Amatic SC', cursive;
+}
+.production ul li{
+   text-align: center;
+   width: 30%;
+}
+.production ul li h3{
+   text-decoration: underline;
+   font-family: 'Amatic SC', cursive;
+}
+.production ul li:hover{
+   transform: scale(1.1);
+}
+.choice h2{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-decoration: underline;
+    font-family: 'Amatic SC', cursive;
+}
+.apropos h2{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  font-family: 'Amatic SC', cursive;
+}
+.bloc_image .contain img{
+  width: 84%;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+.bloc_image .contain img:hover{
+  transform: scale(1.1);
+}
+.bloc_image{
+ /* width: 84%;*/
+  
+}
+.description{
+  display: flex;
+}
+.desc{
+  display: flex;
+}
+.bloc_text span{
+  color: blue;
+  font-weight: bold;
+}
+.desc img{
+  height: 250px;
+  
+}
+.desc img:hover{
+  transform: scale(1.2);
+}
+.bloc_text{
+ width: 175%;
+}
+table {
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    height: 226px;
+}
+table td{
+    border: 2px solid #d90a96;
+    padding: 5px;
+    text-align: center;
+    background: #eff6ff;
+}
+table .cel{
+    background: white;
+    color: blue;
+    font-weight: bold;
+}
+table th{
+    border: 2px solid #d90a96;
+    padding: 5px;
+    text-align: center;
+    background: #c5e0fd;
+}
+
+.contact h2{
+    text-align: center;
+    text-decoration: underline;
+    margin: 57px 0px 40px 0px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.contact .haut{
+    float: right;
+    margin-right: 40px;
+    color: red;
+    font-weight: bold;
+}
+
+.contact form{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid  #333333;
+    padding-top: 31px;
+    padding-bottom: 20px;
+    border-radius: 14px;
+}
+
+.contact form textarea{
+    width: 74%;
+    height: 190px;
+    margin-top: 20px;
+}
+.contact form input[type=email]{
+    width: 50%;
+    height: 31px;
+    margin: 20px 0px 20px 0px;
+}
+.contact form input[type=submit]{
+   width: 38%;
+    height: 33px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+    background: #333333;
+    padding: 21px 0px 38px 0px;
+    color: white;
+    border-color: red;
+}
+.contact form label{
+   color: red;
+   font-weight: bold;
+}
+footer{
+  margin-top: 40px;
+  text-align: center;
+   padding-bottom: 30px;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+</style>
+
+<div class="video-background">
+    <div class="video-foreground">
+        <iframe height="100%" width="100%" src="https://www.youtube.com/embed/x-1-gLv3aWs? controls=0&showinfo=0&rel=0&muted=1&autoplay=1&loop=1&playlist=x-1-gLv3aWs" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <main>
+        <header>
+            <div class="logo">
+              <img src="http://www.lesstarsducirque.com/wp-content/uploads/2016/01/logo-stars-du-cirque.png">
+                 <h1>Wild Circus</h1>
+            </div>    
+            <nav>
+                <ul>
+                    <!-- TODO: Les liens du menu doivent nous emmener vers les sections correspondantes dans la page -->
+                    <li><a href="#performances">Performances</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Prices">Prices</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="production">
+            <h2 id="performances">Performances</h2>
+            <!-- TODO: En utilisant du css place ces trois performances ("lough", "dream, "marvel at") sur la même ligne en enlevant le point généré par la balise "li" -->
+            <ul>
+                <!-- performance 1 -->
+                <li>
+                    <h3>Laugh</h3>
+                    <p>As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
+                    <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbH01fYIpXp0IsNsC4n7J5THHs0Xl4tLgBktvLlwXsujbmDP7b'></div>
+
+                </li>
+                <!-- performance 2 -->
+                <li>
+                    <h3>Dream</h3>
+                    <p>Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
+                    <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFV7wDdneHRTjtaeIHb9MZIrLSXRemexmmLXODNyZAsfsiRtOG'></div>
+                </li>
+                <!-- performance 3 -->
+                <li>
+                    <h3>Marvel at</h3>
+                    <p>Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
+                    <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFNFMODw_mvIpqIu3FfRwSDyirAkV53dwrzER4AbS1RV7J2bM'></div>
+                </li>
+            </ul>
+        </section>
+
+       
+
+        <section class="apropos">
+            <h2 id="About">About Us</h2>
+            <!-- TODO: Cette section n'a pas encore été réalisée, tu as carte blanche pour nous montrer ta créativité -->
+            <div class="description">
+             <div class="bloc_image">
+               <div class="contain"><img src="http://neena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2017/10/16/node_101388/4999269/public/2017/10/16/B9713499933Z.1_20171016092120_000%2BG4V9VK1BO.3-0.jpg?itok=UlitK7t6"></div>
+               <div class="contain"><img src="http://www.focus.institutfrancais.com/sites/default/files/contentimages/Le%20Paon-HD.jpg"></div>
+            </div>
+            <div class="bloc_text">
+                <p>Entering our tent, you will be enchanted by the baroque decor, intimate and shimmering red velvet, beveled mirrors, brass, crystal chandeliers, gilding, balconies worthy of an opera.</p> <br> <br>
+                <div class="desc">
+                    <p>Laughter, emotion, thrills, magic, great numbers presented by artists whose reputation is second to none.
+The 7th generation of the Bormann Moreno family is eager to welcome you to this dream setting where you will find the greatest circus disciplines that have evolved over time while respecting the family tradition.
+If you come to see us on your birthday, tell us at the checkout. We will reserve a surprise during the show ...</p>
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbcQVG6d_knKZuWNzPj60NxbTCdXQUoEfb8wb07RYbzZCW-lR"> -->
+                <img src="http://ekladata.com/dpm1GgwlNBYwMgyUxRw9A5Pm1Oc.png">
+                </div> <br>
+                <p>In your garden, your company, your nightclub ... Cirque Bormann moves and comes to enchant your private party for your prestige and the greatest happiness of your guests !</p> <br> <br>
+                <p>It is possible to rent the marquee after a show to continue the party with your friends (birthday, pot, evening suprise). For a complete privatization, <span>contact us</span>.</p>
+            </div>
+            </div>
+        </section>
+
+        <section class="choice">
+            <h2 id="Prices">Prices</h2>
+            <!-- TODO:  Réalise un tableau qui présente les différents prix. Exemple (aggrandis la fenêtre en largeur pour bien voir l'exemple ci-dessous) :
+
+| Adultes | Enfants de moins de 12 ans | Groupes (plus de 10 personnes) | Ecoles
+Semaines hors mercredi  |         |                         |                                |
+week-end et mercredi    |         |                         |                                |
+-->
+            <table>
+                <tr>
+                    <th>adults</th>
+                    <th>Children under 12 years</th>
+                    <th>Groups (more than 10 people)</th>
+                    <th>Schools</th>
+                </tr>
+                <tr>
+                    <td>Weeks off Wednesday</td>
+                    <td class="cel">5 €</td>
+                    <td class="cel">26 €</td>
+                    <td class="cel">300 €</td>
+                </tr>
+                <tr> 
+                    <td>weekend and wednesday</td>
+                    <td class="cel">5 €</td>
+                    <td class="cel">26 €</td>
+                    <td class="cel">300 €</td>
+                </tr>
+            </table> 
+        </section>
+
+
+        <section class="contact">
+            <h2 id="Contact">Contact Us</h2>
+            <!-- TODO: Réalise un formulaire de contact avec les champs email et message plus un bouton pour envoyer le message.
+Ce formulaire n'a pas besoin d'être fonctionnel, réalise juste la mise en forme.
+-->
+            <form method="" action=""> 
+                <p><label>Your email</label><br>
+                    <input type="email" placeholder="Enter your email">
+                </p>
+                <p><label>Your message</label><br>
+                    <textarea placeholder="Enter your message"></textarea>
+                </p>
+                <input type="submit" value="To send" />
+            </form>
+
+            <a href="#" class="haut">TOP[^]</a>
+        </section>
+
+        <footer>
+            <!-- TODO: Entre ton nom et prénom.
+Mets en place un lien vers le site de la Wild Code School (https://wildcodeschool.fr).
+Tu peux egalement mettre un lien sur ton nom vers ton site, ton blog ou ton profil github ou linkedin, si tu en a un.
+-->
+            <p>Wild Circus by <a href="https://github.com/aliouMarto">Aliou Diaby</a> - France-IOI: [<a href="http://www.france-ioi.org/user/perso.php?sLogin=aliou13">Aliou13</a>] - SoloLearn: [<a href="https://www.sololearn.com/Profile/7308134">Profil sololearn</a>] - <a href="https://wildcodeschool.fr/">Wild Code School</a> - [15/12/2017]</p>
+        </footer>
+</body>
+</html>

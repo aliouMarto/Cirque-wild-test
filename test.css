@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+  background-image: url("http://www.cirquephenix.com/wp-content/uploads/2016/04/DSC0241.png");
+  background-size: 100%;
+}
+main{
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #f2f2f2;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style-type:none;
+}
+
+/****STYLISATION-DU-HEADER(LOGO ET MENU)*****/
+header{
+  display: flex;
+}
+.logo{
+  width: 20%;
+  margin-left: 14px;
+}
+.logo img{
+  width: 87%;
+}
+.logo h1{
+ margin-left: 31px;
+ font-family: 'Amatic SC', cursive;
+}
+nav ul{
+    display: flex;
+    margin-top: 70px;
+}
+nav ul li{
+    margin-left: 75px;
+    background: #333333;
+    padding: 9px;
+    width: 98px;
+    text-align: center;
+}
+nav ul li a{
+    font-size: 20px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+}
+nav ul li a:hover{
+    color: red;
+}
+
+/************STYLE-DU-BLOC-PRODUCTION**************/
+.production ul{
+    display: flex;
+    justify-content: space-around;
+}
+.production ul p{
+   text-align: center;
+   margin-bottom: 10px;
+}
+.production h2{
+   text-align: center;
+   margin-top: 68px;
+   margin-bottom: 50px;
+   text-decoration: underline;
+   font-family: 'Amatic SC', cursive;
+}
+.production ul li{
+   text-align: center;
+   width: 30%;
+}
+.production ul li h3{
+   text-decoration: underline;
+   font-family: 'Amatic SC', cursive;
+}
+.production ul li:hover{
+   transform: scale(1.1);
+}
+
+/************STYLE-DU-BLOC-Apropos**************/
+.apropos h2{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  font-family: 'Amatic SC', cursive;
+}
+.description{
+  display: flex;
+}
+.description .bloc_image .contain img{
+  width: 84%;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+.description .bloc_image .contain img:hover{
+  transform: scale(1.1);
+}
+.description .bloc_text{
+ width: 175%;
+}
+.description .bloc_text .desc{
+  display: flex;
+}
+.description .bloc_text span{
+  color: blue;
+  font-weight: bold;
+}
+.description .bloc_text .desc img{
+  height: 250px; 
+}
+.description .bloc_text .desc img:hover{
+  transform: scale(1.2);
+}
+
+/************STYLE-DU-BLOC-CHOICE-TABLEAU**************/
+.choice h2{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-decoration: underline;
+    font-family: 'Amatic SC', cursive;
+}
+table {
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    height: 226px;
+}
+table td{
+    border: 2px solid #d90a96;
+    padding: 5px;
+    text-align: center;
+    background: #eff6ff;
+}
+table .cel{
+    background: white;
+    color: blue;
+    font-weight: bold;
+}
+table th{
+    border: 2px solid #d90a96;
+    padding: 5px;
+    text-align: center;
+    background: #c5e0fd;
+}
+
+/************STYLE-DU-BLOC-CONTACT**************/
+.contact h2{
+    text-align: center;
+    text-decoration: underline;
+    margin: 57px 0px 40px 0px;
+    font-family: 'Amatic SC', cursive;
+}
+.contact form{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid  #333333;
+    padding-top: 31px;
+    padding-bottom: 20px;
+    border-radius: 14px;
+}
+.contact form label{
+   color: red;
+   font-weight: bold;
+}
+.contact form input[type=email]{
+    width: 50%;
+    height: 31px;
+    margin: 20px 0px 20px 0px;
+}
+.contact form textarea{
+    width: 74%;
+    height: 190px;
+    margin-top: 20px;
+}
+.contact form input[type=submit]{
+   width: 38%;
+    height: 33px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+    background: #333333;
+    padding: 21px 0px 38px 0px;
+    color: white;
+    border-color: red;
+}
+.contact .haut{
+    float: right;
+    margin-right: 40px;
+    color: red;
+    font-weight: bold;
+}
+
+/************FOOTER**************/
+footer{
+  margin-top: 40px;
+  text-align: center;
+   padding-bottom: 30px;
+}
